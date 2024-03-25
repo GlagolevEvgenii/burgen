@@ -1,12 +1,12 @@
 @media(max-width: 767px)and (min-device-pixel-ratio: 2),(max-width: 767px)and (-webkit-min-device-pixel-ratio: 2),(max-width: 767px)and (min-resolution: 192dpi),(max-width: 767px)and (min-resolution: 2dpx) {
     .hero {
-        background-image:url("../img/tui-solo-female-travel-teaser@2x.avif")
+        background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich@2x.avif")
     }
 }
 
 @media(min-width: 768px)and (min-device-pixel-ratio: 2),(min-width: 768px)and (-webkit-min-device-pixel-ratio: 2),(min-width: 768px)and (min-resolution: 192dpi),(min-width: 768px)and (min-resolution: 2dpx) {
     .hero {
-        background-image:url("../img/tui-solo-female-travel-teaser@2x.avif")
+        background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich@2x.avif")
     }
 }
 @media screen and (max-width: 767px) {
@@ -18,7 +18,7 @@
         margin-bottom: 48px;
     }
     .hero {
-        background-image: url("../img/tui-solo-female-travel-teaser.avif")
+        background-image: url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif")
     }
     .hero-title {
         text-shadow:2px 2px 2px rgba(0,0,0,.27)
@@ -35,20 +35,17 @@
     }
 }
 
-@media(min-width: 767px) {
-    .section--padding-top {
-        padding-top:60px;
-    }
+@media (min-width: 600px) {
 
-    .tips-wrapper{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .tip-item--text{
-        max-width: 301px;
+    .horizontal-card{
+        flex-direction: row;
     }
 }
 
 @media screen and (min-width: 768px) {
+    .section {
+        padding: 80px 0;
+    }
     .mobile-menu {
         height:40%;
     }
@@ -66,7 +63,7 @@
         width: 100%;
     }
     .hero {
-        background-image:url("../img/tui-solo-female-travel-teaser.avif");
+        background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -88,6 +85,12 @@
         -ms-flex-align: center;
         align-items: center;
     }
+    .column-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .section-bottom{
+        margin-bottom: 120px;
+    }
 }
 @media(min-width: 1200px) {
     .section-title {
@@ -96,8 +99,11 @@
     .container {
         max-width:1116px;
     }
+    .container_small {
+        max-width: 900px
+    }
     .hero {
-        background-image:url("../img/tui-solo-female-travel-teaser.avif");
+        background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif");
     }
     .hero-title {
         max-width:1100px;
@@ -109,6 +115,6 @@
 
 @media(min-width: 1200px)and (min-device-pixel-ratio: 2),(min-width: 1200px)and (-webkit-min-device-pixel-ratio: 2),(min-width: 1200px)and (min-resolution: 192dpi),(min-width: 1200px)and (min-resolution: 2dpx) {
     .hero {
-        background-image:url("../img/tui-solo-female-travel-teaser.avif")
+        background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif")
     }
 }

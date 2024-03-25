@@ -246,16 +246,12 @@ strong {
     margin-bottom: 44px
 }
 
-.section-content-image {
-    margin-bottom: 55px
-}
-
 .section-content-image--no-margin {
     margin-bottom: 0
 }
 
-.section-text:not(:last-child) {
-    margin-bottom: 30px
+.section-text {
+    margin-bottom: 40px
 }
 .section-text {
     scroll-margin-top: 80px;
@@ -289,16 +285,26 @@ strong {
     padding: 30px 0;
 }
 
+.section-blue.big-mode {
+    padding: 60px 0;
+}
+
 .section-blue-content {
     padding: 30px 0 30px;
     width: 100%;
-    margin-bottom: 45px
+    margin-bottom: 45px;
 }
 
 .section-blue-content--title {
     font-size: 18px;
     line-height: 1;
-    margin-bottom: 5px
+    margin-bottom: 5px;
+}
+.section-blue.big-mode .section-blue-content--title {
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 .section-blue-content--inner {
@@ -306,6 +312,12 @@ strong {
     max-width: 965px;
     margin: 0 auto;
     position: relative
+}
+
+.section-blue.big-mode .section-blue-content--inner {
+    padding-left: 70px;
+    max-width: 100%;
+    margin: 0 0 40px 0;
 }
 
 .section-blue-content--inner::before {
@@ -316,7 +328,13 @@ strong {
     height: 45px;
     background-image: url("../img/info.svg");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+}
+.section-blue.big-mode .section-blue-content--inner::before {
+    left: 0;
+    width: 50px;
+    height: 50px;
+    top:-7px;
 }
 
 .container {
@@ -327,7 +345,7 @@ strong {
 .hero {
     height: 310px;
     background-color: #e2f3fe;
-    background-image: url("../img/in-deinem-tempo-um-die-welt-reisen.avif");
+    background-image: url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top,right
@@ -361,12 +379,48 @@ strong {
     color: #fff;
 }
 
+.horizontal-card{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #E2F3FE;
+    margin-bottom: 80px;
+}
+.horizontal-card:last-of-type{
+    margin-bottom: 0;
+}
+.horizontal-card--title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom:5px;
+    margin-top: 0;
+}
+.horizontal-card--img{
+    flex-shrink: 0;
+}
+.horizontal-list {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 28px;
+}
+.column-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.column-wrapper .section-text{
+    margin-bottom: 0;
+}
+
 .nav {
     display: none;
     z-index: 5;
     position: sticky;
     top: -1px;
-    height: 64px;
     background-color: #092a5e;
     color: #fff;
     -webkit-transition: all 250ms ease-in-out;
@@ -393,11 +447,15 @@ strong {
 .nav-list--item {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-    margin-right: 36px;
+    margin-right: 20px;
     display: inline-block;
 }
 .nav-list--item:last-of-type {
     margin-right: 0;
+}
+
+.nav-list--item:nth-child(5) a{
+    width: max-content;
 }
 
 .nav-list--item:hover,.nav-list--item:focus {
@@ -410,7 +468,7 @@ strong {
     font-size: 18px;
     padding: 13px 0;
     letter-spacing: normal;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .embed {
@@ -499,10 +557,6 @@ strong {
     color: #70cbf4
 }
 
-.mb-45 {
-    margin-bottom: 45px
-}
-
 .prg-button {
     padding: 0;
     display: inline-block;
@@ -511,38 +565,14 @@ strong {
     background-color: rgba(0,0,0,0);
     cursor: pointer
 }
-.tips-wrapper{
-    padding: 30px 0 85px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 68px;
-    grid-row-gap: 60px;
+.pt-0 {
+    padding-top: 0!important;
 }
-.tip-item{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+.mb-20 {
+    margin-bottom: 20px!important;
 }
-.tip-item--img{
-    width: 52px;
-    height: 52px;
-    margin-bottom: 30px;
-}
-.tip-item--title{
-    color: #092A5E;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 26px;
-    margin-bottom: 38px;
-}
-.tip-item--text{
-    color: #092A5E;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
+.section-bottom{
+    margin-bottom: 40px;
 }
 
 
