@@ -3,6 +3,25 @@ const embedEngine = {
         embedEngine.binds();
     },
     binds() {
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
+        });
 
         document.querySelectorAll(".embed-button").forEach((e) => {
             e.addEventListener("click", embedEngine.embedBox);
