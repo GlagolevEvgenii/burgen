@@ -1,13 +1,13 @@
-@media (min-width: 480px) {
-    .swiper {
-        height: 777px;
-    }
-}
-@media (min-width: 600px) {
-    .swiper {
-        height: 756px;
-    }
-}
+/*@media (min-width: 480px) {*/
+/*    .swiper {*/
+/*        height: 777px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 600px) {*/
+/*    .swiper {*/
+/*        height: 756px;*/
+/*    }*/
+/*}*/
 @media(max-width: 767px)and (min-device-pixel-ratio: 2),(max-width: 767px)and (-webkit-min-device-pixel-ratio: 2),(max-width: 767px)and (min-resolution: 192dpi),(max-width: 767px)and (min-resolution: 2dpx) {
     .hero {
         background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich@2x.avif")
@@ -19,13 +19,12 @@
         background-image:url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich@2x.avif")
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .mobile-menu {
         display:block;
     }
     body {
         margin-top:47px;
-        margin-bottom: 48px;
     }
     .hero {
         background-image: url("../img/schloesser-burgen-deutschlands-kulturschaetze-im-vergleich.avif")
@@ -52,9 +51,15 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .section {
         padding: 80px 0;
+    }
+    .custom-image-margin {
+        margin-bottom: 80px;
+    }
+    .pt-60 {
+        padding-top: 80px!important;
     }
     .mobile-menu {
         height:40%;
@@ -123,6 +128,9 @@
     }
     .swiper {
         height:753px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        display: flex!important;
     }
 }
 

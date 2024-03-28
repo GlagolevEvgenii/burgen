@@ -152,15 +152,12 @@ img {
 .swiper-button-next, .swiper-button-prev {
     width: 20px !important;
     height: 32px !important;
-    /*transform: translateY(-50%) !important;*/
-    /*top: 383px !important;*/
+    display: none!important;
 }
 .swiper-button-next img, .swiper-button-prev img  {
     width: 20px !important;
     height: 32px !important;
     display: block;
-    /*transform: translateY(-50%) !important;*/
-    /*top: 383px !important;*/
 }
 .swiper-button-next:after, .swiper-button-prev:after {
     display: none;
